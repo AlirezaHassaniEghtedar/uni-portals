@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+}
+
+:root {
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-muted: #F4F4F5;
+  --foreground: #18181B;
+  --foreground-muted: #52525B;
+  --foreground-subtle: #A1A1AA;
+  --border: #E4E4E7;
+  --primary: #4F46E5;
+  --primary-light: #818CF8;
+  --secondary: #10B981;
+  --secondary-light: #34D399;
+  --tertiary: #F59E0B;
+  --tertiary-light: #FBBF24;
+  --gradient-primary: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%);
+  --gradient-secondary: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-2: 0 2px 4px rgba(0,0,0,0.05), 0 4px 8px rgba(0,0,0,0.06);
+  --shadow-4: 0 4px 8px rgba(0,0,0,0.06), 0 8px 16px rgba(0,0,0,0.08);
+  --shadow-8: 0 8px 16px rgba(0,0,0,0.08), 0 16px 32px rgba(0,0,0,0.10);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+.dark {
+  --background: #0B0B0F;
+  --surface: #16161C;
+  --surface-muted: #1C1C23;
+  --foreground: #F4F4F5;
+  --foreground-muted: #A1A1AA;
+  --foreground-subtle: #6B6B75;
+  --border: #27272E;
+  --primary: #818CF8;
+  --primary-light: #4F46E5;
+  --secondary: #34D399;
+  --secondary-light: #10B981;
+  --tertiary: #FBBF24;
+  --tertiary-light: #F59E0B;
+  --gradient-primary: linear-gradient(135deg, #6366F1 0%, #818CF8 100%);
+  --gradient-secondary: linear-gradient(135deg, #34D399 0%, #6EE7B7 100%);
+  --shadow-1: none;
+  --shadow-2: 0 2px 6px rgba(0,0,0,0.5);
+  --shadow-4: 0 4px 12px rgba(0,0,0,0.6);
+  --shadow-8: 0 8px 24px rgba(0,0,0,0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 250ms ease, color 250ms ease;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Scrollbar hide */
+::-webkit-scrollbar { width: 0; height: 0; }
+
+/* Transition all theme-sensitive properties */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+/* Override transition for interactive elements that need faster response */
+button, a, input {
+  transition-duration: 150ms;
+}
