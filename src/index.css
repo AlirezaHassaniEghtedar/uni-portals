@@ -63,6 +63,22 @@
   --shadow-8: 0 8px 24px rgba(0,0,0,0.7);
 }
 
+/* Responsive container utility */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 900px) {
+  .container { padding: 0 40px; }
+}
+
+@media (max-width: 500px) {
+  .container { padding: 0 16px; }
+}
+
 * {
   box-sizing: border-box;
 }
