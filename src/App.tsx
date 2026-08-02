@@ -144,7 +144,7 @@ function OutlineButton({ children, onClick, fullWidth = false }: { children: Rea
         background: hovered ? 'rgba(79,70,229,0.06)' : 'transparent',
         color: 'var(--foreground)',
         borderRadius: 'var(--radius-md)',
-        padding: '13px 24px',
+        // padding: '13px 24px',
         fontSize: '15px',
         fontWeight: '600',
         border: '1.5px solid var(--border)',
@@ -308,13 +308,13 @@ function Navbar({ dark, onToggle }: { dark: boolean; onToggle: () => void }) {
           )}
 
           {/* Right actions */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexShrink: 0 }}>
             {/* Theme toggle always visible */}
             <ThemeToggle dark={dark} onToggle={onToggle} />
 
             {/* Login button — desktop & tablet only in navbar */}
             {!isMobile && (
-              <PrimaryButton>Login</PrimaryButton>
+              <PrimaryButton>Login to Portal</PrimaryButton>
             )}
 
             {/* Hamburger — tablet & mobile */}
@@ -451,7 +451,7 @@ function HeroSection() {
           alignItems: isMobile ? 'stretch' : 'center',
         }}>
           <PrimaryButton fullWidth={isMobile}>Explore the Portal</PrimaryButton>
-          <OutlineButton fullWidth={isMobile}>See How Recommendations Work</OutlineButton>
+          <OutlineButton fullWidth={isMobile}><a title='read the paper' style={{width: '100%', height: '100%' , padding: '13px 24px'}} href="https://drive.google.com/drive/folders/11Z4tKbqcp_QITKsEoqbWrKXq9_HLr5Xb?usp=sharing"  target='_blank'>See How Recommendations Work</a></OutlineButton>
         </div>
       </div>
 
@@ -1242,13 +1242,12 @@ function Footer() {
           <button style={{
             background: '#fff', color: '#4F46E5',
             borderRadius: 'var(--radius-md)',
-            padding: '13px 28px',
             fontSize: 15, fontWeight: 700,
             border: 'none', cursor: 'pointer',
             whiteSpace: 'nowrap', minHeight: 44,
             width: isMobile ? '100%' : undefined,
           }}>
-            Read the Research →
+            <a href="https://drive.google.com/drive/folders/11Z4tKbqcp_QITKsEoqbWrKXq9_HLr5Xb?usp=sharing" target='_blank' style={{padding: '13px 28px'}}>Read the Research →</a>
           </button>
         </div>
 
@@ -1259,8 +1258,8 @@ function Footer() {
               <Icon path={Icons.user} color="#fff" size={20} />
             </div>
             <div>
-              <div style={{ fontSize: isMobile ? 14 : 15, fontWeight: 600, color: 'var(--foreground)' }}>Research Team — Department of Computer Science</div>
-              <div style={{ fontSize: 13, color: 'var(--foreground-muted)' }}>Capstone Research Project · University Information Systems · 2025–2026</div>
+              <div style={{ fontSize: isMobile ? 14 : 15, fontWeight: 600, color: 'var(--foreground)' }}>Research Team — Department of Computer Engineering</div>
+              <div style={{ fontSize: 13, color: 'var(--foreground-muted)' }}>Capstone Research Project · Kharazmi University · 2025–2026</div>
             </div>
           </div>
         </div>
