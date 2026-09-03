@@ -1151,7 +1151,7 @@ function ResearchSection() {
             Grounded in Academic Research
           </h2>
           <p style={{ fontSize: isMobile ? 14 : 15, lineHeight: 1.7, color: 'var(--foreground-muted)', marginBottom: 16 }}>
-            This project is a capstone research initiative investigating the effectiveness of unified digital academic portals and AI-driven course recommendation systems in improving student outcomes.
+            This project is an undergraduate capstone project focused on designing and implementing a unified digital student portal with an AI-driven course recommendation engine for the Computer Engineering program.
           </p>
           <p style={{ fontSize: isMobile ? 14 : 15, lineHeight: 1.7, color: 'var(--foreground-muted)', marginBottom: 24 }}>
             The study employs a mixed-methods approach: quantitative analysis of student registration data across four semesters and qualitative interviews with academic advisors and students.
@@ -1236,7 +1236,7 @@ function Footer() {
               Explore the Full Research
             </h2>
             <p style={{ fontSize: isMobile ? 14 : 16, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
-              Access the complete capstone paper, methodology, and data appendices.
+              Access the complete project report, system architecture, and technical documentation.
             </p>
           </div>
           <button style={{
@@ -1258,8 +1258,8 @@ function Footer() {
               <Icon path={Icons.user} color="#fff" size={20} />
             </div>
             <div>
-              <div style={{ fontSize: isMobile ? 14 : 15, fontWeight: 600, color: 'var(--foreground)' }}>Research Team — Department of Computer Engineering</div>
-              <div style={{ fontSize: 13, color: 'var(--foreground-muted)' }}>Capstone Research Project · Kharazmi University · 2025–2026</div>
+              <div style={{ fontSize: isMobile ? 14 : 15, fontWeight: 600, color: 'var(--foreground)' }}>Alireza Hassani Eghtedar — Department of Computer Engineering</div>
+              <div style={{ fontSize: 13, color: 'var(--foreground-muted)' }}>Undergraduate Capstone Project · Kharazmi University · 2025–2026</div>
             </div>
           </div>
         </div>
