@@ -1233,7 +1233,7 @@ function Footer() {
         }}>
           <div>
             <h2 style={{ fontSize: isMobile ? 22 : 28, fontWeight: 700, color: '#fff', margin: '0 0 8px', letterSpacing: '-0.01em' }}>
-              Explore the Full Research
+              Explore the Full Project Paper
             </h2>
             <p style={{ fontSize: isMobile ? 14 : 16, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
               Access the complete project report, system architecture, and technical documentation.
