@@ -451,7 +451,7 @@ function HeroSection() {
           alignItems: isMobile ? 'stretch' : 'center',
         }}>
           <PrimaryButton fullWidth={isMobile}>Explore the Portal</PrimaryButton>
-          <OutlineButton fullWidth={isMobile}><a title='read the paper' style={{width: '100%', height: '100%' , padding: '13px 24px'}} href="https://drive.google.com/drive/folders/11Z4tKbqcp_QITKsEoqbWrKXq9_HLr5Xb?usp=sharing"  target='_blank'>See How Recommendations Work</a></OutlineButton>
+          <OutlineButton fullWidth={isMobile}><a title='read the paper' style={{width: '100%', height: '100%' , padding: '13px 24px'}} href="https://drive.google.com/drive/folders/1bJNFR-d29V7eISIMtyEVkpzmyGz58YOO?usp=sharing"  target='_blank'>See How Recommendations Work</a></OutlineButton>
         </div>
       </div>
 
@@ -1247,7 +1247,7 @@ function Footer() {
             whiteSpace: 'nowrap', minHeight: 44,
             width: isMobile ? '100%' : undefined,
           }}>
-            <a href="https://drive.google.com/drive/folders/11Z4tKbqcp_QITKsEoqbWrKXq9_HLr5Xb?usp=sharing" target='_blank' style={{padding: '13px 28px'}}>Read the Research →</a>
+            <a href="https://drive.google.com/drive/folders/1bJNFR-d29V7eISIMtyEVkpzmyGz58YOO?usp=sharing" target='_blank' style={{padding: '13px 28px'}}>Read the Paper →</a>
           </button>
         </div>
 
