@@ -314,7 +314,7 @@ function Navbar({ dark, onToggle }: { dark: boolean; onToggle: () => void }) {
 
             {/* Login button — desktop & tablet only in navbar */}
             {!isMobile && (
-              <PrimaryButton>Login to Portal</PrimaryButton>
+              <PrimaryButton><a href="https://uniportal-student-suite-894150137257.europe-west2.run.app/">Login to Portal</a></PrimaryButton>
             )}
 
             {/* Hamburger — tablet & mobile */}
@@ -450,7 +450,7 @@ function HeroSection() {
           justifyContent: 'center',
           alignItems: isMobile ? 'stretch' : 'center',
         }}>
-          <PrimaryButton fullWidth={isMobile}>Explore the Portal</PrimaryButton>
+          <PrimaryButton fullWidth={isMobile}><a href="https://uniportal-student-suite-894150137257.europe-west2.run.app/">Explore the Portal</a></PrimaryButton>
           <OutlineButton fullWidth={isMobile}><a title='read the paper' style={{width: '100%', height: '100%' , padding: '13px 24px'}} href="https://drive.google.com/drive/folders/1bJNFR-d29V7eISIMtyEVkpzmyGz58YOO?usp=sharing"  target='_blank'>See How Recommendations Work</a></OutlineButton>
         </div>
       </div>
@@ -746,7 +746,7 @@ function RecommenderSection() {
             </div>
           ))}
           <div style={{ marginTop: 8 }}>
-            <PrimaryButton recommender fullWidth={isMobile}>Get My Recommendations</PrimaryButton>
+            <PrimaryButton recommender fullWidth={isMobile}><a href="https://uniportal-student-suite-894150137257.europe-west2.run.app/">Get My Recommendations</a></PrimaryButton>
           </div>
         </div>
 
